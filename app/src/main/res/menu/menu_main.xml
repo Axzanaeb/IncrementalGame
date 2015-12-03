@@ -1,0 +1,40 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- "Mark Favorite", should appear as action button if possible -->
+    <item
+        android:id="@+id/minesBtn"
+        android:icon="@drawable/mining"
+        android:title=""
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/villageUpg"
+        android:icon="@drawable/village_upg"
+        android:title=""
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/scienceBtn"
+        android:icon="@drawable/science"
+        android:title=""
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/blkSmtBtn"
+        android:icon="@drawable/black_smth"
+        android:title=""
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/barracksBtn"
+        android:icon="@drawable/barracks"
+        android:title=""
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/battleBtn"
+        android:icon="@drawable/battle"
+        android:title=""
+        app:showAsAction="always"/>
+
+
+
+
+
+</menu>

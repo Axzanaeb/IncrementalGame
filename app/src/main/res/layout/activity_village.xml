@@ -1,0 +1,171 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:id="@+id/sample_main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/app_background"
+    android:theme="@style/Theme.AppCompat">
+
+ <TextView
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:textAppearance="?android:attr/textAppearanceMedium"
+     android:text="@string/villagers_top_string"
+     android:id="@+id/textView8"
+     android:layout_alignParentTop="true"
+     android:layout_centerHorizontal="true" />
+
+ <TextView
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:textAppearance="?android:attr/textAppearanceSmall"
+     android:text="@string/villagers_top_desc_string"
+     android:id="@+id/textView9"
+     android:layout_below="@+id/textView8"
+     android:layout_centerHorizontal="true" />
+
+ <TextView
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="@string/farmer"
+     android:id="@+id/farmers"
+     android:layout_marginTop="48dp"
+     android:layout_below="@+id/villager_breed_rate_txv"
+     android:layout_alignRight="@+id/idle_villagers_txv"
+     android:layout_alignEnd="@+id/idle_villagers_txv" />
+
+ <SeekBar
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:id="@+id/seekBar_farmers"
+     android:progress="50"
+     android:indeterminate="false"
+     android:layout_below="@+id/farmers"
+     android:layout_alignLeft="@+id/farmers"
+     android:layout_alignStart="@+id/farmers"
+     android:layout_alignRight="@+id/textView9"
+     android:layout_alignEnd="@+id/textView9" />
+
+ <CheckBox
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:id="@+id/checkbox_lumberjack"
+     android:checked="false"
+     android:button="@drawable/checkbox_lock_icon"
+     android:layout_above="@+id/seekBar_lumberjacks"
+     android:layout_alignLeft="@+id/checkBox_farmer"
+     android:layout_alignStart="@+id/checkBox_farmer" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/idle_villager"
+        android:id="@+id/idle_villagers_txv"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/textView9"
+        android:layout_alignLeft="@+id/textView9"
+        android:layout_alignStart="@+id/textView9" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/villager_breed_rate"
+        android:id="@+id/villager_breed_rate_txv"
+        android:layout_below="@+id/idle_villagers_txv"
+        android:layout_alignLeft="@+id/idle_villagers_txv"
+        android:layout_alignStart="@+id/idle_villagers_txv" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lumberjack"
+        android:id="@+id/lumberjacks"
+        android:layout_below="@+id/seekBar_farmers"
+        android:layout_alignLeft="@+id/seekBar_farmers"
+        android:layout_alignStart="@+id/seekBar_farmers" />
+
+    <SeekBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar_lumberjacks"
+        android:progress="50"
+        android:indeterminate="false"
+        android:layout_below="@+id/lumberjacks"
+        android:layout_alignLeft="@+id/lumberjacks"
+        android:layout_alignStart="@+id/lumberjacks"
+        android:layout_alignRight="@+id/seekBar_farmers"
+        android:layout_alignEnd="@+id/seekBar_farmers" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox_gold_miner"
+        android:checked="false"
+        android:button="@drawable/checkbox_lock_icon"
+        android:layout_alignBottom="@+id/goldMiners"
+        android:layout_alignLeft="@+id/checkBox_stone_miner"
+        android:layout_alignStart="@+id/checkBox_stone_miner" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/stone_miner"
+        android:id="@+id/stoneMiners"
+        android:layout_below="@+id/seekBar_lumberjacks"
+        android:layout_alignLeft="@+id/seekBar_lumberjacks"
+        android:layout_alignStart="@+id/seekBar_lumberjacks" />
+
+    <SeekBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar_stone_miners"
+        android:progress="50"
+        android:indeterminate="false"
+        android:layout_below="@+id/stoneMiners"
+        android:layout_alignLeft="@+id/stoneMiners"
+        android:layout_alignStart="@+id/stoneMiners"
+        android:layout_alignRight="@+id/seekBar_lumberjacks"
+        android:layout_alignEnd="@+id/seekBar_lumberjacks" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox_stone_miner"
+        android:checked="false"
+        android:button="@drawable/checkbox_lock_icon"
+        android:layout_above="@+id/seekBar_stone_miners"
+        android:layout_alignLeft="@+id/checkbox_lumberjack"
+        android:layout_alignStart="@+id/checkbox_lumberjack" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/gold_miner"
+        android:id="@+id/goldMiners"
+        android:layout_below="@+id/seekBar_stone_miners"
+        android:layout_alignLeft="@+id/seekBar_stone_miners"
+        android:layout_alignStart="@+id/seekBar_stone_miners" />
+
+    <SeekBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar_gold_miners"
+        android:progress="50"
+        android:indeterminate="false"
+        android:layout_below="@+id/goldMiners"
+        android:layout_alignLeft="@+id/goldMiners"
+        android:layout_alignStart="@+id/goldMiners"
+        android:layout_alignRight="@+id/seekBar_stone_miners"
+        android:layout_alignEnd="@+id/seekBar_stone_miners" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox_farmer"
+        android:checked="false"
+        android:button="@drawable/checkbox_lock_icon"
+        android:layout_above="@+id/seekBar_farmers"
+        android:layout_alignLeft="@+id/villager_breed_rate_txv"
+        android:layout_alignStart="@+id/villager_breed_rate_txv" />
+
+</RelativeLayout>
