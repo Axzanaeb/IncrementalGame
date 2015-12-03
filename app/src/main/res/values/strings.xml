@@ -3,7 +3,7 @@
     <string name="villagers_top_desc_string">Here you can distribute all your Town villagers.</string>
     <string name="farmer">Farmers: %1$d%%</string>
     <string name="villager_breed_rate">Villagers breed rate: %1$d/min</string>
-    <string name="idle_villager">Idle Villagers: %1$d%%</string>
+    <string name="idle_villager">Idle Villagers: %1$d</string>
     <string name="lumberjack">Lumberjacks: %1$d%%</string>
     <string name="stone_miner">Stone Miners: %1$d%%</string>
     <string name="gold_miner">Gold Miners: %1$d%%</string>
